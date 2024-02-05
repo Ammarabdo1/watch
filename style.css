@@ -1,0 +1,585 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "Josefin Sans",sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    box-shadow: 1px 2px 20px 8px rgba(0, 0, 0, 0.082);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar .container .nav-item .nav-link{
+    color: black;
+    transition: all .6s ease;
+}
+
+.navbar .container .nav-item .nav-link:hover{
+    font-size: 1.1em;
+    background-color: rgba(249, 77, 89, 0.822);
+}
+
+
+header{
+    margin-top: 50px;
+    background: rgba(194, 194, 194, 0.324);
+}
+
+header .container-fluid .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .container-fluid .row h1{
+    color: rgba(0, 3, 35, 0.904);
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+header .container-fluid .row p{
+    width: 75%;
+    margin-top: 40px;
+    font-size: 1.1em;
+}
+
+header .container-fluid .row button{
+    background:linear-gradient(to right , rgba(58, 58, 58, 0.669), rgba(58, 58, 58, 0.947)) no-repeat;
+    background-size:0% ;
+    border:none;
+    background-color: red;
+    color: white;
+    padding: 13px 25px;
+    margin-top:20px;
+    transition: all .5s ease;
+    letter-spacing:2px;
+    font-weight: 600;
+}
+
+header .container-fluid .row button:hover{
+    background-size:100% ;
+}
+
+.New_product .container .row{
+    padding: 30px 0px;
+}
+
+.New_product .container .row h1{
+    color: black;
+    font-weight: bold;
+    font-family: Impact,'Arial Narrow Bold', sans-serif;
+}
+
+.New_product .container .row .zoom-out{
+    overflow: hidden;
+}
+
+.New_product .container .row .zoom-out img{
+    width: 100%;
+    height: 500px;
+    transition: all .7s ease;
+}
+
+.New_product .container .row .zoom-out img:hover{
+    filter: saturate(2);
+    transform: scale(1.1);
+}
+
+.New_product .container .row .text{
+    text-align: center;
+}
+
+.New_product .container .row .text p{
+    color: red;
+}
+
+
+.pictures .single-picture{
+    overflow:hidden;
+    margin-bottom: 30px;
+}
+
+
+.pictures .single-picture .big-img{
+    height: 700px;
+}
+
+.pictures .single-picture .small-img{
+    height: 334.73px;
+}
+
+.pictures .single-picture .picture{
+    transform:scale(1.07);
+    transition: all .6s ease;
+}
+
+.pictures .single-picture .picture:hover{
+    filter:brightness(.6);
+    transform:scale(1);
+}
+
+
+.popularItems .container .row{
+    margin: 0px 70px;
+}
+
+.popularItems .container .row .mainText{
+    margin-top: 40px;
+    margin:0px 230px
+}
+
+.popularItems .container .row .mainText h1{
+    text-align: center;
+    font-size: 3rem;
+    font: bold;
+    font-family: Impact,'Arial Narrow Bold', sans-serif;
+    line-height: 80px;
+
+}
+
+.popularItems .container .row .mainText p{
+    text-align:center;
+    line-height:25px;
+    font-weight: 500;
+    font-family: Impact,'Arial Narrow Bold', sans-serif;
+    color: rgba(114, 114, 114, 0.861);
+}
+
+.popularItems .container .row .cardd{
+    margin:60px 0px;
+    width:100%;
+}
+
+.popularItems .container .row .cardd .card-img{
+    position: relative;
+}
+
+.popularItems .container .row .cardd .card-img img{
+    border-bottom: solid red;
+    width:100%;
+}
+
+.popularItems .container .row .cardd .card-img i{
+    position: absolute;
+    font-size:2rem;
+    top: 5%;
+    right: 5%;
+    opacity: 0;
+    transition: all .5s ease;
+    color: black;
+    
+}
+
+.popularItems .container .row .cardd .card-img:hover i{
+    opacity: 1;
+}
+
+.popularItems .container .row .cardd .card-img i:focus{
+    background-color: red;
+}
+
+.popularItems .container .row .cardd .card-img .hoverText{
+    position: absolute;
+    font-size:1.1rem;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 0, 0, 0.737);
+    color: white;
+    width: 100%;
+    padding: 20px 0px;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.popularItems .container .row .cardd .card-img:hover .hoverText{
+    opacity: 1;
+}
+
+.popularItems .container .row .cardd .cardText{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.popularItems .container .row .cardd .cardText h2{
+    margin-bottom: 20px;
+    font-size: 1.9rem;
+}
+
+.choice .container .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 100px;
+}
+
+.choice .container .row .-text{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.choice .container .row .-text h1{
+    color: black;
+    font-size: 3.3em;
+    font-weight: 700;
+    line-height:110px;
+    font-family: "Josefin Sans",sans-serif;
+}
+
+.choice .container .row .-text p{
+    width: 95%;
+    color: rgb(99, 99, 99);
+    font-weight: 400;
+    font-family: "Josefin Sans",sans-serif;
+}
+
+.choice .container .row .-text button{
+    width: 200px;
+    padding: 15px 0px;
+    margin-top: 30px;
+    background: rgba(255, 0, 0, 0.861);
+    font-weight:700;
+    font-family: "Josefin Sans",sans-serif;
+}
+
+
+.services .container .row{
+    background-color: rgb(234, 0, 0);
+    color: white;
+    padding: 20px;
+    margin: 0px 100px;
+    font-family: "Josefin Sans",sans-serif;
+}
+
+.services .container .row i{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.services .container .row h5{
+    font-weight:700 ;
+}
+
+.services .container .row p{
+    font-size: 1.05rem;
+    color: rgb(215, 215, 215);
+    width: 240px;
+}
+
+
+footer{
+    margin: 120px 200px;
+}
+
+footer h6{
+    font-size:1.1rem ;
+    font-weight: 800;
+    color: black;
+}
+
+footer .container .row p a{
+    color: rgb(147, 147, 147);
+    transition: all .3s ease; 
+}
+
+footer .container .row p a:hover{
+    color: red;
+    padding-left:5px ;
+}
+
+footer .fab{
+    color: black;
+    transition: all .7s ease;
+    font-size: 1.15rem;
+}
+
+footer .link1:hover{
+    color: red;
+    transform: scaleY(1.7);
+}
+
+footer .link2:hover{
+    color: red;
+    transform: scaleY(1.7);
+}
+
+
+
+
+
+
+/**************************** Start media Query ****************************/
+
+@media only screen and (min-width: 0px) and (max-width: 575px)
+{
+    header .container-fluid .row{
+        padding: 20px 0px;
+    }
+
+    header .container-fluid .row h1{
+        font-size: 2.2rem;
+        line-height:40px;
+    }
+
+    header .container-fluid .row p{
+        font-size: 1rem;
+    }
+
+    header .container-fluid .row img{
+        display: none;
+    }
+
+    
+    .popularItems .container .row{
+        margin: 0px 0px;
+    }
+
+    .popularItems .container .row .mainText{
+        margin: 0;
+    }
+
+    
+
+    .choice .container .row{
+        padding: 100px 20px;
+    }
+    
+    .choice .container .row .-text h1{
+        font-size: 2rem;
+        line-height: 70px;
+    }
+
+    .choice .container .row .-text button{
+        margin-bottom: 20px;
+    }
+
+    .services .container .row{
+        margin: 0px 0px;
+    }
+
+    footer{
+        margin: 120px 0px;
+    }
+
+    footer .add{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+
+    header .container-fluid .row img{
+        height: 400px;
+    }
+
+    header .container-fluid .row h1{
+        font-size: 2.4rem;
+        line-height:45px;
+    }
+
+    header .container-fluid .row p{
+        font-size: 1rem;
+    }
+
+    .New_product .container .row .zoom-out{
+        height: 400px;
+    }
+
+    .popularItems .container .row{
+        margin: 0px 0px;
+    }
+
+    .popularItems .container .row .mainText{
+        margin: 0;
+    }
+
+    .choice .container .row{
+        padding: 100px 0px;
+    }
+    
+    .choice .container .row .-text h1{
+        font-size: 2rem;
+        line-height: 70px;
+    }
+
+    .choice .container .row .-text button{
+        margin-bottom: 20px;
+    }
+
+    .services .container .row{
+        margin: 0px 0px;
+    }
+
+    footer{
+        margin: 120px 0px;
+    }
+    
+    footer .add{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    header .container-fluid .row img{
+        height: 600px;
+    }
+
+    header .container-fluid .row h1{
+        font-size: 4rem;
+        line-height:80px;
+    }
+
+    header .container-fluid .row p{
+        font-size: 1rem;
+    }
+
+    .New_product .container .row .zoom-out{
+        height: 400px;
+    }
+
+    .popularItems .container .row{
+        margin: 0px 0px;
+    }
+
+    .popularItems .container .row .mainText{
+        margin: 0px 40px;
+    }
+
+    .choice .container .row{
+        padding: 100px 0px;
+    }
+    
+    .choice .container .row .-text h1{
+        font-size: 2.2rem;
+        line-height: 50px;
+    }
+    
+    .services .container .row{
+        margin: 0px 0px;
+    }
+
+    footer{
+        margin: 120px 50px;
+    }
+    
+    footer .add{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media only screen and (min-width:992px) and (max-width:1199px){
+    header .container-fluid .row img{
+        height: 600px;
+    }
+
+    header .container-fluid .row h1{
+        font-size: 4rem;
+        line-height:80px;
+    }
+
+    header .container-fluid .row p{
+        font-size: 1rem;
+    }
+
+    .navbar .container{
+        margin: 10px 200px;
+    }
+
+    .popularItems .container .row{
+        margin: 0px;
+    }
+
+    .popularItems .container .row .mainText{
+        margin: 0px 170px;
+    }  
+
+
+    .choice .container .row{
+        padding: 100px 10px;
+    }
+    
+    .choice .container .row .-text h1{
+        font-size: 3rem;
+    }
+
+    .services .container .row{
+        margin: 0px 0px;
+    }
+
+    footer{
+        margin: 120px 0px;
+    }
+    
+    footer h6{
+        font-size: 1em;
+    }
+
+
+}
+
+
+@media only screen and (min-width:1200px) and (max-width:1400px){
+    
+    .New_product .container .row{
+        padding: 30px 100px;
+    }
+
+    .navbar .container{
+        margin: 10px 200px;
+    }
+
+    .popularItems .container .row{
+        margin: 0px;
+    }
+
+    .popularItems .container .row .mainText{
+        margin: 0px 200px;
+    }
+
+    .choice .container .row{
+        padding: 100px 10px;
+    }
+
+        
+    .services .container .row{
+        margin: 0px 0px;
+    }
+
+    footer{
+        margin: 120px 100px;
+    }
+    
+
+    
+}
+
+@media only screen and (min-width:1401px) and (max-width:1550px){
+    .popularItems .container .row .mainText{
+        margin: 0px 300px;
+    }
+}
+
